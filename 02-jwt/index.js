@@ -62,7 +62,7 @@ function decodeJwt(token) {
     // Your code here
 
     try {
-        const decodedToken = jwt.decode(token,jwtPassword);
+        const decodedToken = jwt.decode(token);
         return !!decodedToken; 
       } catch (err) {
         return false; 
